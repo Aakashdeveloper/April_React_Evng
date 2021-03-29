@@ -71,6 +71,40 @@ Step to generate package.json
 > type "yes"
 
 
-> How to install package
-> create react app 
-> component
+//////////////////////
+Step to install package
+////////////////
+> go inside the folder using cmd
+> type npm i react
+
+
+//////////////////////
+Step to generate react app
+////////////////
+#window
+$$$ One time in new laptop $$$$
+> open the cmd as admin
+> type 'npm i -g create-react-app'
+
+$$$ Every time you need application $$$$
+> go inside the folder using cmd
+> type create-react-app appname
+
+//////////////////////
+Step to start react app
+////////////////////
+> go inside the folder using cmd
+> npm start 
+> localhost:3000
+
+
+//es5
+function add(a,b){
+    return a+b
+}
+
+add(1,2)
+3
+
+//es6
+const add = (a,b) => { return a+b }
