@@ -108,3 +108,37 @@ add(1,2)
 
 //es6
 const add = (a,b) => { return a+b }
+
+
+function test(a,b){
+    var out = [a,b]
+    return out
+}
+
+test(1,2)
+2
+test(4,3)
+3
+
+///component////
+> functional
+    > Dumb component
+    > We use for the display purpose
+    > it cannot maintain state
+
+> class Component
+    > Logical Component
+    > We call api and app logic in class
+    > it can maintain state
+> Hooks
+
+
+state
+> local variable
+> any data interaction will happen through state
+> we can update value of state
+
+props
+> Use to transport state
+> we cannot change value of props
+> it can only transfer data btw nested component
