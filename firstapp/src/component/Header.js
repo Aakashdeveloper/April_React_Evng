@@ -1,14 +1,36 @@
-import React from 'react';
+import React, {Component} from 'react';
+import './Header.css';
 
-const Header = () => {
-    return(
-        <React.Fragment>
-            <center>
-                <h1>React App</h1>
-            </center>
-            <hr/>
-        </React.Fragment>
-    )
+class Header extends Component{
+    constructor(){
+        super()
+
+        this.state={
+            title:'React App',
+            userInput:'User Text Here',
+        }
+    }
+
+    handleChange=(event)=>{
+        console.log(event.target.value)
+        this.setState({userInput:event.target.value})
+    }
+
+    render(){
+        console.log(">>>>>render")
+        return(
+            <React.Fragment>
+                <header>
+                    <div className="logo">{this.state.title}</div>
+                    <center>
+                        <input onChange={this.handleChange}/>
+                        <div style={{color:'white'}}>{this.state.userInput}</div>
+                    </center>
+                </header>
+                <hr/>
+            </React.Fragment>
+        )
+    }
 }
 
 export default Header;
