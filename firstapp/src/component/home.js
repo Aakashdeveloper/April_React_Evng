@@ -9,16 +9,28 @@ class Home extends Component {
         super()
 
         this.state={
-            news:JSON
+            news:JSON,
+            filtered: JSON
         }
+    }
+    /*
+    var a = [2,4,6,7,3,9]
+    a.filter((data)=> {return data>5})
+    */
+
+    filterNews=(userInput)=>{
+        const output = this.state.news.filter((data) => {
+            return data.title.toLowerCase().indexOf(userInput.toLowerCase())>-1
+        })
+        this.setState({filtered:output})
     }
 
     render(){
         // console.log(this.state.news)
         return(
             <>
-                <Header/>
-                <NewsDisplay newsdata={this.state.news}/>
+                <Header userText={(data) => {this.filterNews(data)}}/>
+                <NewsDisplay newsdata={this.state.filtered}/>
                 <Footer year={2021} month={'April'}/>
             </>
         )

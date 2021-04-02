@@ -1,10 +1,19 @@
 import React from 'react';
 
 const NewsDisplay = (props) => {
-    console.log("inside news>>>",props)
+    //console.log("inside news>>>",props)
+    const renderNews = props.newsdata.map((data) => {
+        return(
+            <div key={data.id}>
+                <h3>{data.title}</h3>
+                <p>{data.feed}</p>
+            </div>
+        )
+    })
+
     return(
         <div>
-            <h1>News Display</h1>
+            {renderNews}
         </div>
     )
 }

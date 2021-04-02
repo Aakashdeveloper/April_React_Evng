@@ -142,3 +142,64 @@ props
 > Use to transport state
 > we cannot change value of props
 > it can only transfer data btw nested component
+
+
+var a = [2,4,6,7,3,9]
+a.map((data) => { return data*2})
+(6) [4, 8, 12, 14, 6, 18]
+a.filter((data)=> {return data>5})
+(3) [6, 7, 9]
+
+//es5
+var age = 10
+var out = "my age is "+age 
+"my age is 10"
+
+//es6
+var age = 10
+var out = `my age is ${age}`
+"my age is 10"
+
+var a = [2,4,6,7,3,9]
+a.map((data) => { return `<a>${data*2}<a/>`})
+(6) ["<a>4<a/>", "<a>8<a/>", "<a>12<a/>", "<a>14<a/>", "<a>6<a/>", "<a>18<a/>"]
+
+var a = ["Delhi","Mumbai","Pune","Amsterdam","London"]
+undefined
+a.indexOf('Delhi')
+0
+a.indexOf('London')
+4
+a.indexOf('Hongkong')
+-1
+a.indexOf('Dubai')
+-1
+
+
+
+function add(xxxxx,yyyy){
+    return xxxxx+yyyy
+}
+
+add(1,2)
+
+parent=>child (props)
+child=>parent(props with function)
+
+
+npm i react-router-dom
+
+
+(get) hotels>         https://developerfunnel.herokuapp.com/hotels
+(get) hotelwrtcity >  https://developerfunnel.herokuapp.com/hotels?city=6
+(get) hoteldetails >  https://developerfunnel.herokuapp.com/hotelsdetails/1
+(get) onbasisoftrip > https://developerfunnel.herokuapp.com/hotellist/1
+
+(get) roomfilter >    https://developerfunnel.herokuapp.com/hotellist/4?roomtype=1
+
+(get) costfilter >    https://developerfunnel.herokuapp.com/hotellist/1?hcost=1000&lcost=500
+(get) cityname >      https://developerfunnel.herokuapp.com/location
+(get) rooms >         https://developerfunnel.herokuapp.com/rooms
+(get) triptype>       https://developerfunnel.herokuapp.com/booking
+(get) bookingdetails> https://developerfunnel.herokuapp.com/allBooking
+(post)placebooking >  https://developerfunnel.herokuapp.com/placeBook
