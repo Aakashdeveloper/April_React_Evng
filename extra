@@ -210,3 +210,5 @@ match > for params
 
 
 npm i react-router-dom axios react-tabs
+
+npm run build
