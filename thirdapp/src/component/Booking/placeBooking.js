@@ -1,6 +1,7 @@
+import axios from 'axios';
 import React,{Component} from 'react';
 
-const bookingUrl = "";
+const url = "http://localhost:8900/booking";
 
 class PlaceOrder extends Component{
     constructor(props){
@@ -21,6 +22,16 @@ class PlaceOrder extends Component{
 
     handleSubmit = () => {
         console.log(this.state)
+        fetch(url,
+            {
+                method:'POST',
+                headers:{
+                    'Accept':'application/json',
+                    'Content-Type':'application/json'
+                },
+                body: JSON.stringify(this.state)
+            })
+            .then(this.props.history.push('/viewBooking'))
     }
 
     render(){

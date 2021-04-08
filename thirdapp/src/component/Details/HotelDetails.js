@@ -54,7 +54,7 @@ class Details extends Component{
                             </TabPanel>
                         </Tabs>
 
-                        <Link to="/" className="btn btn-danger">Back</Link> &nbsp;
+                        <Link to={`/`} className="btn btn-danger">Back</Link> &nbsp;
                         <Link to={`/booking/${details.name}`} className="btn btn-success">
                             Proceed
                         </Link>
