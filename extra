@@ -236,3 +236,7 @@ json-server --watch db.json --port 8900
 /******UserInfo*****/
 (GET) => http://localhost:5000/api/auth/userinfo
 (Header) => {'x-access-token':'token value from login'}
+
+https://docs.github.com/en/developers/apps/authorizing-oauth-apps
+
+https://www.youtube.com/c/DeveloperFunnel/videos
