@@ -8,19 +8,21 @@ Npm
 React = 3
 Mock API
 json-server
-//////////////////////
 React-JWT(Login Logout)-2
 React-GraphQL-1
+//////////////////////
 Depolyment
 -> MERN
 -> Docker
 -> heroku
 -> Nginx
 Github
+
 React_hooks -1
-React-Redux =1
-React-Redux =1
 Basic React Native=1
+
+React-Redux =1
+React-Redux =1
 Testing Jest Enzime
 React-Saga -1
 React-with-typescript-1
@@ -240,3 +242,15 @@ json-server --watch db.json --port 8900
 https://docs.github.com/en/developers/apps/authorizing-oauth-apps
 
 https://www.youtube.com/c/DeveloperFunnel/videos
+
+npm i apollo-boost apollo-graphql graphql graphql-tag react-apollo
+
+
+
+//////////Setup native/////
+npm i -g create-react-native-app
+create-react-native-app appname
+cd appname
+npm run web
+
+mobile > https://www.apple.com/in/search/expo-go?src=globalnav
