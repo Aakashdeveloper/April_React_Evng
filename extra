@@ -10,20 +10,19 @@ Mock API
 json-server
 React-JWT(Login Logout)-2
 React-GraphQL-1
-//////////////////////
+Github
 Depolyment
 -> MERN
 -> Docker
 -> heroku
 -> Nginx
-Github
-
 React_hooks -1
+//////////////////////
 Basic React Native=1
-
 React-Redux =1
 React-Redux =1
 Testing Jest Enzime
+
 React-Saga -1
 React-with-typescript-1
 --------NOT Backend--------------
@@ -254,3 +253,30 @@ cd appname
 npm run web
 
 mobile > https://www.apple.com/in/search/expo-go?src=globalnav
+
+// from new folder first time
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/Aakashdeveloper/testgit.git
+git push -u origin master
+
+// from same folder next all time
+git add .
+git commit -m "first commit"
+git push
+
+git status
+git pull
+git clone
+
+
+docker build . -t appname
+docker run -p 9800:3000 appname
+
+view  => display part 
+action => all api call here
+reducer => manage state 
+store => save state
+
+npm i redux react-redux redux-logger
