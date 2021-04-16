@@ -17,12 +17,11 @@ Depolyment
 -> heroku
 -> Nginx
 React_hooks -1
+React-Redux =1
+React-Redux =1
 //////////////////////
 Basic React Native=1
-React-Redux =1
-React-Redux =1
 Testing Jest Enzime
-
 React-Saga -1
 React-with-typescript-1
 --------NOT Backend--------------
@@ -279,4 +278,6 @@ action => all api call here
 reducer => manage state 
 store => save state
 
-npm i redux react-redux redux-logger
+npm i redux react-redux redux-logger react-router-dom redux-promise react-slick 
+
+npm i enzyme enzyme-adapter-react-16 react-addons-test-utils react-test-renderer
