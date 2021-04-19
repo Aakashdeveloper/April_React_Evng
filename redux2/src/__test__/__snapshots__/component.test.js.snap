@@ -4,7 +4,7 @@ exports[`SnapShot Footer test testing Footer 1`] = `
 <footer>
   <div>
     <hr />
-    © Developer Funnels
+    © Developer Funnel
   </div>
 </footer>
 `;

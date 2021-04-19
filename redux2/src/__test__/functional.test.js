@@ -8,6 +8,7 @@ describe('testing Base Button',() => {
         const instance = component.root;
         const button = instance.findByType('button');
         button.props.onClick();
-        expect(button.props.children).toBe('Some Things')
+        expect(button.props.children).toBe('Some Thing')
     })
+    
 })
